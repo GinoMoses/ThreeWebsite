@@ -8,7 +8,7 @@ document.querySelector<HTMLElement>('#moses')!.onmouseover = event => {
     const interval = setInterval(() => {
          
         (event.target! as HTMLElement).innerText = (event.target! as HTMLElement).innerText.split("")
-        .map((letter: any, index: number) => {
+        .map((_letter: any, index: number) => {
             if(index < intervalCount) {
                 return (event.target! as HTMLElement).dataset.value![index];
             }
@@ -25,7 +25,7 @@ document.querySelector<HTMLElement>('#gino')!.onmouseover = event => {
     const interval = setInterval(() => {
          
         (event.target! as HTMLElement).innerText = (event.target! as HTMLElement).innerText.split("")
-        .map((letter: any, index: number) => {
+        .map((_letter: any, index: number) => {
             if(index < intervalCount) {
                 return (event.target! as HTMLElement).dataset.value![index];
             }
